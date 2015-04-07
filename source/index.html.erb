@@ -1,10 +1,90 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: VANHOUSE - Rent a Van
 ---
 
-<div class="welcome text-center padded">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<!-- Banner -->
+<div id="banner" class="text-center window-height">
+  <h1>Rent a Van</h1>
+ <br>
+ <br>
+ <br><br><br><br><br>
+    <p> For holidays with friend </p>
+    <p> Make your dreams a reality</p>
+    <%= link_to "Sign up", "#email_form", class: "btn btn-info" %>
+ </div>
+
+</div>
+  <!-- Features -->
+<div id="features" class="text-center">
+
+ <div class="container" data-sr="enter left, hustle 20px">
+    <div class="row">
+        <div class="col-xs-12 col-sm-4">
+            <div class="card">
+              <%= image_tag "luggage.png" %>
+              <h2>Make your luggages</h2>
+            </div>
+        </div>
+    <div class="col-xs-12 col-sm-4">
+        <div class="card">
+        <%= image_tag "surf_man.png" %>
+          <h2>Take your surf</h2>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card">
+        <%= image_tag "van_green.png" %>
+        <h2>And put it all in your van</h2>
+      </div>
+     </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Form -->
+ <div class="white_style" id="email_form">
+    <h2> Get news from us</h2>
+    <p>
+      Leave us your mail and get Vanhouse promos and news
+    </p>
+    <form>
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+      </div>
+      <button type="submit" class="btn btn-default">
+          Submit
+      </button>
+    </form>
+  </div>
+
+<!-- Map -->
+<div id="map" style="width: 100%; height: 400px;"></div>
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+  <script type="text/javascript">
+    var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+
+    var myOptions = {
+      zoom: 16,
+      center: myLatlng,
+      scrollwheel: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: [] // TODO: replace [] by array from https://snazzymaps.com/
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), myOptions);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "You are here!"
+    });
+  </script>
+
+<!-- ScrollReveal -->
+  <script src='/js/scrollReveal.min.js'></script>
+    <script>
+
+      window.sr = new scrollReveal();
+
+    </script>

@@ -1,4 +1,24 @@
-- name: Some product
-  image: some_product.png
-- name: Other product
-  image: other_product.png
+- name: Van to book
+  image: van_exemple.jpg
+  price: 50€ / Day
+- name: Van to book
+  image: van_exemple.jpg
+  price: 100€ / Day
+- name: Van to book
+  image: van_exemple.jpg
+  price: 150€ / Day
+- name: Van to book
+  image: van_exemple.jpg
+  price: 200€ / Day
+- name: Van to book
+  image: van_exemple.jpg
+  price: 80€ / Day
+- name: Van to book
+  image: van_exemple.jpg
+  price: 70€ / Day
+- name: Van to book
+  image: van_exemple.jpg
+  price: 80€ / Day
+- name: Van to book
+  image: van_exemple.jpg
+  price: 130€ / Day

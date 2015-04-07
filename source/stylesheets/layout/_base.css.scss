@@ -4,3 +4,89 @@
  * Before writing in this file, look if there is not
  * already a Bootstrap SCSS variable that does the same job
  * ------------------------------------- */
+
+ #banner   {
+  position: relative;
+  background-image: image-url('background.jpeg');
+  margin: auto;
+  background-size: cover;
+  padding: 100px 50px;
+  height: 650px;
+  color: white;
+  background-position: center bottom;
+.filter {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    opacity: 0.1;
+  }
+  h1 {
+    font-size: 70px;
+    position: relative;
+    z-index: 2;
+  }
+  p {
+    font-size: 30px;
+    font-weight: 0px;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@import url("banner.css");
+@import url("footer.css");
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #141414;
+}
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#features   {
+  background-color: #EEEEEE;
+  padding: 50px;
+  color:black;
+}
+
+.white_style    {
+  padding: 50px;
+  text-align: center;
+  background-color: #ACE4E9;
+  color:white;
+}
+
+.box {
+  width: 300px;
+}
+
+#features h2   {
+ font-size: 20px;
+}
+
+#contact  {
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 30px;
+
+}
+
+#banner_contact   {
+  background-image: image-url('vanban.jpg');
+  margin: auto;
+  background-size: cover;
+  padding: 50px 50px;
+  height: 450px;
+  color: white;
+  background-position: center -70px;
+
+}
+
+
+
